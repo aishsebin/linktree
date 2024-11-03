@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2dc5cf;
+  background: linear-gradient(135deg, #f3a1b1 20%, #fa6d27 50%, #2dc5cf 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 0; /* Padding at the top and bottom for extra spacing */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Container Styling */
+.background {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+}
+
+.profile h2 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Link Cards */
+.link-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  background-color: #fafafa;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .profile h2 {
+    font-size: 1em;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+}
